@@ -1,0 +1,45 @@
+body {
+    font-family: "Century Gothic";
+    justify-content: center;
+    text-align: center;
+    background: color #dcdfb6;    
+}
+h1 {
+    color: #5D5F6E;
+    text-align: center;
+    padding-top: 7%;
+}
+#intro {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+img { 
+    width:640px; 
+    height:427px; 
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#form {
+    background-color: #e5e6d7;
+    padding: 2%;
+    margin: auto;
+    width: 50%;
+    border: 2px solid #92957e;
+    border-radius: 25px;
+    margin-top: 2%;    
+    text-align: center;
+}
+
+#submit {
+    margin-top: 1%;
+}
+#intro-p {
+    padding-top: 3%;
+    padding-bottom: 3%;    
+
+}
+#submit {
+    margin-bottom: 1%;
+}

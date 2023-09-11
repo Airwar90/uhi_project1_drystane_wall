@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Stone Wall Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="intro">
+      <!-- Title at top of the page-->
+    <h1>Drystane Wall Cost Calculator</h1>
+    <!--Little intro about the topic-->
+    <p id="intro-p">Dry stone, sometimes called drystack or, in Scotland, drystane, 
+        is a building method by which structures are constructed from stones without 
+        any mortar to bind them together. A certain amount of binding is obtained 
+        through the use of carefully selected interlocking stones.</p>
+        <!--bootstrap carousel to loop pictures of the topic-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/1920px-Dry_stone_fences_in_the_Yorkshire_Dales,_England.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/wall-5395102_640.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/drystone-wall.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/stock-photo-newly-built-cotswold-drystone-wall.jpg" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!--container for the calculator inputs and results-->
+    <div id="form">      
+        <label for="length">Length in meters:</label>
+        <input id="length" type="number"><br>
+        <label for="height">Height in meters:</label>
+        <input id="height" type="number"><br>
+        <input id="submit" type="submit" value="Calculate" onclick="calculate()">   
+        <div id="result-box">
+            <p id="surface-p"></p>
+            <p id="tonnes-p"></p>
+            <p id="materials-p"></p>
+            <p id="labour-p"></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
